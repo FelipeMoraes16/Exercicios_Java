@@ -1,9 +1,26 @@
-# 🏦 Sistema de Relatório de Depósitos (Java)
+# 🏦 Sistema Bancário - Estudos de POO (Java)
 
-Este projeto foi desenvolvido para consolidar fundamentos de Java, focando em lógica de negócios e robustez de código.
+Este repositório contém a evolução dos meus estudos em Java, transitando de uma lógica procedural para a **Programação Orientada a Objetos (POO)**, com foco em segurança, reuso e escalabilidade de código.
 
-### 🚀 Funcionalidades e Conceitos Aplicados:
-- **Tratamento de Exceções:** Uso de `try-catch` para lidar com entradas inválidas e garantir a execução do programa.
-- **Estruturas de Dados:** Implementação de `ArrayList` para armazenamento dinâmico de registros.
-- **Configuração de Charset:** Ajuste para suporte a caracteres especiais (acentos) via terminal.
-- **Lógica de Repetição e Condicionais:** Validação de depósitos e controle de fluxo.
+## 🧠 Pilares de POO Implementados:
+
+### 1. Encapsulamento & Integridade
+- **Proteção de Dados:** Atributos sensíveis (como `saldo`) definidos como `private`.
+- **Controle de Acesso:** Implementação de métodos `getters` e `setters` para leitura e escrita controlada.
+- **Validação de Estado:** Uso de **Construtores** para garantir que nenhum objeto seja instanciado em estado inválido (ex: impedindo saldo inicial negativo).
+
+### 2. Herança & Reuso
+- **Hierarquia de Classes:** Criação de uma classe base `Conta` e especialização através da classe `ContaPoupanca` via `extends`.
+- **Reaproveitamento de Comportamento:** A classe filha utiliza métodos da classe mãe através da instrução `super()`.
+
+### 3. Regras de Negócio e Validações
+- **Cláusulas de Guarda:** Uso de verificações prévias nos métodos de `sacar` e `aplicarRendimento` para evitar fluxos de erro (como rendimentos negativos ou saques sem saldo).
+- **Tratamento de Fluxo:** Implementação de lógica para impedir operações financeiras inconsistentes.
+
+## 🛠️ Evolução Técnica
+- **Ambiente Profissional:** Configuração e versionamento via Git integrado ao VS Code.
+- **Clean Code:** Padronização de nomes de métodos seguindo a convenção `camelCase`.
+- **Interface Console:** Saídas formatadas com `printf` para melhor experiência do usuário.
+
+---
+*Projeto em constante evolução para fins de aprendizado acadêmico e profissional.*
